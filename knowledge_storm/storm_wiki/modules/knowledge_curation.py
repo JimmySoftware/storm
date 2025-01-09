@@ -75,6 +75,7 @@ class ConvSimulator(dspy.Module):
                 search_queries=expert_output.queries,
                 search_results=expert_output.searched_results,
             )
+            dlg_turn.persona = persona
             dlg_history.append(dlg_turn)
             callback_handler.on_dialogue_turn_end(dlg_turn=dlg_turn)
 
