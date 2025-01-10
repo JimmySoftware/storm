@@ -23,6 +23,7 @@ class DialogueTurn:
         self.user_utterance = user_utterance
         self.search_queries = search_queries
         self.search_results = search_results
+        self.persona = None
 
         if self.search_results:
             for idx in range(len(self.search_results)):
